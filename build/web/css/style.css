@@ -1,0 +1,115 @@
+#about p{
+    color: blue;
+}
+.team-name{
+    color: blue;
+    text-align: center;
+}
+.content-table td th{
+   padding: 15px;
+text-align: left;
+}
+
+.content-heading{
+    color:red;
+    
+}
+.team-profile{
+    height: 100px;
+    width: 100px;
+     margin: 0 auto;
+}
+.info-td{
+    padding: 15px;
+    text-align: left;
+}
+.about-icon{
+    
+}
+
+.mynav{
+    background-color:#fbfbfb;
+    
+   
+}
+.navbar-brand{
+          color:red!important;
+          font-size: 36px !important;
+          font-weight: bold;
+          font-style: italic;
+          margin-left:100px!important; 
+          
+      }
+     
+      .icon{
+          width: 24px;
+          height: 24px;
+      }
+      .X{
+          font-size: 44px;
+      }
+      .td-items{
+          width: 30%;
+          margin: 115px;
+          color: red;
+          font-size: 16px;
+          font-weight: bold;
+      }
+      .td-items-values{
+          width: 70%;
+          margin: 115px;
+        
+      }
+      .td-items-values-call{
+            background: greenyellow;
+      }
+      
+      .td-items-values img{
+          height: 30px;
+          widows: 50%;
+          margin-left: 10px;
+       
+      }
+      .td-items-values .btn{
+          margin: 20px;
+          margin-left: 0px; 
+      }
+       .footer-th{
+                 
+                   text-height: 24px;
+                   color:white;
+                   font-weight: 700; 
+                   float: left;
+                   
+                  
+               }
+               .footer-td{
+                   width: 33%;
+                   margin-left:20px;
+                   padding-left: 150px;
+                   text-height: 16px;
+                   color:#fff;
+                   font-weight: 400; 
+               }
+               .footer-row{
+                   background: #3f3f3f;
+                   width:100%;
+               }
+               .footer-ul{
+                    list-style-type: none;
+                    float: left;
+               }
+               .footer-item{
+                   float: left;
+                   margin: 15px;
+                   padding: 10px;
+                   float: left;
+                  
+               }
+               .footer-th{
+                   text-align: center;
+               }
+               .footer-row-copy-right{
+                   background: #3f3f3f;
+                   
+               }

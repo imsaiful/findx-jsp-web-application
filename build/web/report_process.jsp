@@ -14,7 +14,10 @@ pageEncoding="ISO-8859-1"%>
 <%@page import="java.text.SimpleDateFormat"%>
 
 <html>
-    <head></head>
+    <head>
+         <title>Locate your lost item</title>
+            <link rel="stylesheet" href="css/style.css">
+    </head>
     <body>
 <%
 String str="";
@@ -24,13 +27,14 @@ SimpleDateFormat in = new SimpleDateFormat("yyyy-MM-dd");
 String parameter = request.getParameter("item_date");
 java.util.Date temp_date = in.parse(parameter);
 String date=temp_date.toString();
+String category=request.getParameter("item_category");
 String description=request.getParameter("item_descition");
 try
 {
 Class.forName("com.mysql.jdbc.Driver");
 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "root","myammaji");
 Statement st=conn.createStatement();
-int i=st.executeUpdate("insert into report(item_name,item_location,date,item_description) values('"+name+"','"+location+"','"+date+"','"+description+"')");
+int i=st.executeUpdate("insert into report(item_name,item_location,date,category,item_description) values('"+name+"','"+location+"','"+date+"','"+category+"','"+description+"')");
 out.println("Data is successfully inserted!");
 }
 catch(Exception e)
@@ -46,5 +50,7 @@ catch(Exception e)
         <% out.print(location);%>
         <% out.print(date);%>
         <% out.print(description);%>
+        <% out.print(category);%>
+        <a href="home.jsp">Back to home</a>
     </body>
 </html>
